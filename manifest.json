@@ -1,0 +1,22 @@
+{
+  "name": "Pinpoint",
+  "version": "1.0",
+  "manifest_version": 3,
+  "description": "Try to locate the image on Google Maps in as few guesses as possible!",
+  "content_scripts": [
+    {
+      "matches": ["https://www.google.com/maps/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "permissions": ["scripting"],
+  "host_permissions": ["https://api.worldguessr.com/"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "icons": {
+    "16": "pinpoint16.png",
+    "48": "pinpoint48.png",
+    "128": "pinpoint128.png"
+  }
+}
