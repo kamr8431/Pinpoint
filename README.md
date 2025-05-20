@@ -3,11 +3,12 @@ Free extension for google maps where you try to locate a random street view imag
 How to Install
 1. Clone the repo                                  
    a. type into the terminal: clone git https://github.com/kamr8431/Pinpoint.git                                          
-   b. locate the Pinpoint folder on your computer
-2. Open chrome://extensions/
-3. Turn on developer mode (top right corner)
+   b. locate the Pinpoint folder on your computer                                       
+   (Alternatively, you can just click the green code button on github and then download zip. Make sure to unzip the folder if you do this though!)
+3. Open chrome://extensions/
+4. Turn on developer mode (top right corner)
 ![Screenshot 2025-05-19 at 10 02 23 PM](https://github.com/user-attachments/assets/15f95e35-f84b-4494-940b-601b93cf0a69)
-4. Press Load Unpacked and select the Pinpoint folder (Make sure to REMOVE the ds store, git attributes, and ReadME files if they are in the folder!!!)
+5. Press Load Unpacked and select the Pinpoint folder (Make sure to REMOVE the ds store, git attributes, and ReadME files if they are in the folder!!!)
 ![Screenshot 2025-05-19 at 10 06 11 PM](https://github.com/user-attachments/assets/11e0ff7c-4ce2-4946-852f-22df837ca06e)
 
 You are now ready to play! Navigate to google maps. You should see a box on the bottom left corner of your screen with a random street view image
