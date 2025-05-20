@@ -58,6 +58,12 @@ function injectStaticMap() {
   iframeWrapper.appendChild(iframe);
   container.appendChild(iframeWrapper);
 
+  const coordsText = document.createElement('div');
+  coordsText.id = 'coords-text';
+  coordsText.style.marginTop = '10px';
+  coordsText.style.fontSize = '14px';
+  coordsText.style.color = '#333';
+
   const guessBtn = document.createElement('button');
   guessBtn.textContent = 'Guess';
   guessBtn.style.marginTop = '12px';
@@ -117,14 +123,16 @@ function injectStaticMap() {
     }
   };
 
+  container.appendChild(coordsText);
   container.appendChild(guessBtn);
   container.appendChild(resultDiv);
   document.body.appendChild(container);
 }
 
-function updateDetectedCoords(coordsText) {
-  const [lat, lng] = coordsText.split(',').map(Number);
+function updateDetectedCoords(coordsTxt) {
+  const [lat, lng] = coordsTxt.split(',').map(Number);
   lastDetectedCoords = { lat, lng };
+  document.getElementById('coords-text').textContent = 'Current coordinates: '+lat+', '+lng;
 }
 
 function observeForCoordinateButtons() {
@@ -137,8 +145,8 @@ function observeForCoordinateButtons() {
             : node.querySelector?.('button[aria-label]');
 
           if (button && /^[\d.\-]+,\s*[\d.\-]+$/.test(button.getAttribute('aria-label'))) {
-            const coordsText = button.getAttribute('aria-label');
-            updateDetectedCoords(coordsText);
+            const coordsTxt = button.getAttribute('aria-label');
+            updateDetectedCoords(coordsTxt);
           }
         }
       }
