@@ -17,5 +17,7 @@ You are now ready to play! Navigate to google maps. You should see a box on the 
 Click anywhere on the map and then press the Guess button to make a guess. If you get within 200 meters, you win! Refresh to generate a new random location. Example guess below:
 ![Screenshot 2025-05-19 at 10 11 36 PM](https://github.com/user-attachments/assets/61b604a1-0340-4fab-859c-29ddf648063d)
 
+Refresh the tab for a new random location!
+
 An example round video is linked below (As you can tell, im not very good lol)
 https://youtu.be/eP1d0zPNWQ0
