@@ -1,8 +1,8 @@
 Free extension for google maps where you try to locate a random street view image!
 
 How to Install
-1. Clone the repo
-   a. type into the terminal: clone git https://github.com/kamr8431/Pinpoint.git
+1. Clone the repo                                  
+   a. type into the terminal: clone git https://github.com/kamr8431/Pinpoint.git                                          
    b. locate the Pinpoint folder on your computer
 2. Open chrome://extensions/
 3. Turn on developer mode (top right corner)
